@@ -16,11 +16,15 @@
       </div>
     </nav>
     <div class="container">
-      <% if notice %>
-        <div class="alert alert-info">
-          <%= notice %>
-        </div>
-      <% end %>
+      <div class="row">
+        <% if notice %>
+        <div class="col-md-10 col-md-offset-1">
+          <div class="alert alert-info">
+            <%= notice %>
+          </div>
+          </div>
+        <% end %>
+      </div>
       <%= yield %>
     </div>
   </body>
